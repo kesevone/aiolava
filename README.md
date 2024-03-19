@@ -2,7 +2,7 @@
 
 # :a: Aiolava — a simple and convenient asynchronous library for working with the Business Lava API.
 
-### You will be able to create invoices with all the parameters that are available in the Lava API, as well as receive information about them after creation. Also, you can get information about the balance, and in the future methods will be implemented under the Lava Payoff API.
+### You will be able to create invoices with all the parameters that are available in the Lava API, as well as receive information about them after creation. Also, you can get information about the balance, and in the future, methods for the Payoff API, the Reccurent API will be implemented
 
 ## :arrow_heading_down: Installation (pip or git)
 ```
