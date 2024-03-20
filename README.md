@@ -9,7 +9,7 @@
 pip install pyaiolava
 ```
 ```
-git clone https://github.com/kesevone/aiolava
+pip install got+https://github.com/kesevone/aiolava
 ```
 
 ## :page_facing_up: Simple usage
