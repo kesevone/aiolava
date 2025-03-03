@@ -133,17 +133,17 @@ class AiolavaInvoiceAPI(AiolavaHTTP):
 
     async def get_invoice(
             self,
-            shop_id: str,
             invoice_id: str = None,
-            payment_id: str = None
+            payment_id: str = None,
+            shop_id: str = None,
     ) -> OldInvoiceModel:
         """
         Receives an invoice by payment or invoice ID. Both IDs are mutually exclusive; you must pass one or the other.
 
         Args:
-            shop_id (str): Shop ID.
             invoice_id (str, optional): Invoice ID.
             payment_id (str, optional): Payment ID.
+            shop_id (str, optional): Shop ID.
 
         Raises:
             MutuallyExclusiveError: Invoice and payment IDs are mutually exclusive.
@@ -152,6 +152,7 @@ class AiolavaInvoiceAPI(AiolavaHTTP):
         Returns:
             OldInvoiceModel
         """
+        shop_id = shop_id or self._shop_id
 
         if invoice_id and payment_id:
             raise MutuallyExclusiveError('The invoice ID (invoice_id) and payment ID (payment_id) are mutually exclusive, please specify one.')
