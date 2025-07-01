@@ -16,7 +16,7 @@ setup(
   long_description_content_type='text/markdown',
   url='https://github.com/kesevone/aiolava',
   packages=find_packages(),
-  install_requires=['aiohttp==3.9.3', "pydantic==2.5.3"],
+  install_requires=['aiohttp>=3.9.3', "pydantic>=2.5.3"],
   classifiers=[
     'Programming Language :: Python :: 3.11',
     'License :: OSI Approved :: MIT License',

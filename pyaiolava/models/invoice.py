@@ -10,7 +10,7 @@ class NewInvoiceModel(BaseModel):
     id: str | None = None
     shop_id: str | None = None
     shop_name: str | None = None
-    amount: int | None = None
+    amount: float | None = None
     payment_url: str | None = None
 
     payment_methods: List[str] | None = None
@@ -23,7 +23,7 @@ class OldInvoiceModel(BaseModel):
     id: str | None = None
     payment_id: str | int = None
     shop_id: str | None = None
-    amount: int | None = None
+    amount: float | None = None
 
     payment_methods: List[str] | None = None
     fail_url: str | None = None
